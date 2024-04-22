@@ -1,0 +1,15 @@
+.class-1 (@size: 20px , @color: red){
+  font-size: @size;
+  color: @color;
+  border: 3px dashed black;
+}
+.class-2 { 
+  .class-1(15px , blue);
+  border-radius: 5px;
+  background-color: yellow;
+} 
+
+.class-3 { 
+  .class-1;
+  color: pink;
+}

@@ -1,0 +1,12 @@
+.p-style (@size: 20px) when (@size<=20px){
+  font-size: @size;
+  color: blue;
+}
+.p-style (@size: 20px) when (@size>20px){
+  font-size: @size;
+  color: red
+}
+
+p{ 
+  .p-style (15px);
+  }
